@@ -1,0 +1,88 @@
+/* Allgemeine Zurücksetzung */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #571f1f;
+  padding: 10px 30px;
+  position: relative;
+}
+
+.logo {
+  width: 60px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+.logo img {
+  max-height: 120%;
+  width: auto;
+}
+
+/* Animationscode */
+
+.animation-container {
+  position: relative;
+}
+
+.animation {
+  width: 35px;
+  height: 35px;
+  background: url("cookie_35-removebg-preview.png") no-repeat;
+  background-size: cover;
+  animation: moveRight 20s linear infinite;
+  position: absolute;
+  left: 0;
+  transform: translateX(-100%);
+  visibility: hidden;
+}
+
+@keyframes moveRight {
+  0%, 100% {
+      left: -60px;
+  }
+  50% {
+      left: 94%;
+      visibility: visible;
+  }
+  
+  50.01%, 100% {
+      visibility: hidden;
+  }
+}
+/* Navbar-Animationscode */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(
+    to right,
+    rgb(71, 25, 25),
+    rgb(136, 50, 50),
+    rgb(209, 76, 76)
+  );
+  color: transparent;
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  animation: wave 40s linear infinite;
+  z-index: 1; /* Navbar über Animation */
+}
+
+@keyframes wave {
+  0% {
+      background-position: 200% 0;
+  }
+  100% {
+      background-position: -200% 0;
+  }
+}
+.navbar a{
+  text-decoration: none;
+}
