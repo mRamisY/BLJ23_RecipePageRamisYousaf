@@ -97,22 +97,24 @@ nav {
 }
 /* Ingredient List */
 .ingredient-list {
-    padding: 0;
+  padding: 0;
 }
 
 .list-group-item {
-    border: none;
+  border: none;
 }
 
 .list-group-item input {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .ingredient-text {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 .completed {
-    text-decoration: line-through;
-    color: #888;
+  text-decoration: line-through;
+  color: #888;
 }
+
+
