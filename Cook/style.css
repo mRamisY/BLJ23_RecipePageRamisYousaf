@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -37,7 +38,7 @@ nav {
 
 .animation {
   width: 50px;
-  height:50px;
+  height: 50px;
   background: url("Grittibaenz_klein-removebg-preview.png") no-repeat;
   background-size: cover;
   animation: rotate 20s linear infinite;
@@ -49,8 +50,7 @@ nav {
 }
 
 @keyframes rotate {
-  0%,
-  100% {
+  0%, 100% {
     left: -60px;
     transform: translateX(-100%) rotate(0deg);
   }
@@ -59,8 +59,7 @@ nav {
     visibility: visible;
     transform: translateX(-100%) rotate(180deg);
   }
-  50.01%,
-  100% {
+  50.01%, 100% {
     transform: translateX(-100%) rotate(360deg);
     visibility: hidden;
   }
@@ -92,33 +91,76 @@ nav {
     background-position: -200% 0;
   }
 }
+
 .navbar a {
   text-decoration: none;
 }
-/* Ingredient List */
-.ingredient-list {
-  padding: 0;
+
+/* Custom styling for the Ingredients section */
+#block {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.sub-title {
+  font-size: 1.8em;
+  color: #555;
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 
 .list-group-item {
   border: none;
+  background-color: #fff;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
 }
 
-.list-group-item input {
-  margin-right: 10px;
+.list-group-item:hover {
+  background-color: #f5f5f5;
 }
 
 .ingredient-text {
   flex-grow: 1;
+  font-size: 1.2em;
+  color: #333;
 }
 
+/* Checkbox styling */
+.form-check-input {
+  margin-right: 10px;
+  cursor: pointer;
+}
+/* Custom styling for the Decoration section */
+#block .sub-title:last-child {
+  margin-bottom: 0;
+}
+
+/* Additional styling for an attractive look */
+.row {
+  margin: 0;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+/* Feel free to adjust the colors, fonts, and other properties to your liking */
 .completed {
   text-decoration: line-through;
   color: #888;
 }
 
 p {
-  color:rgb(222, 184, 135);
+  color: rgb(222, 184, 135);
   font-family: "Courgette", sans-serif;
 }
 
@@ -130,6 +172,7 @@ p {
 .col-lg-3 {
   flex: 0 0 100%;
 }
+
 .instruction {
   border: 2px solid rgb(130, 102, 67);
   border-radius: 25px;
@@ -146,9 +189,11 @@ p {
   width: 100%;
   border-radius: 20px;
 }
+
 .in-text {
   flex-grow: 1;
 }
+
 .instruction:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transform: scale(1.05);
