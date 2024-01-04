@@ -199,3 +199,155 @@ p {
   transform: scale(1.05);
   transition: all 0.5s ease;
 }
+.preparation-box {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.preparation-box h3 {
+    font-size: 1.5em;
+    color: #555;
+}
+
+.preparation-box p.prep-time {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+    .preparation-box {
+        margin-bottom: 10px;
+    }
+}
+
+.custom-icon {
+  width: 30px; 
+  height: 30px; 
+  transition: transform 0.3s ease-in-out; /* Für Hover-Effekte */
+}
+.downl {
+  background: #b49d42;
+  color: rgb(223, 223, 223);
+  padding: 0.7em 0.8em;
+  padding-left: 0.4em;
+  display: flex;
+  align-items: center;
+  border: none;
+  font-weight: 1000;
+  z-index: 2;
+  position: relative; /* Position relativ setzen */
+}
+
+.downl span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+
+}
+.downl:hover {
+  background: #f8d95f; 
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgb(255, 251, 0);
+}
+.downl:hover .custom-icon {
+  transform: translateX(1.48em) scale(1.35); /* Bewegung und Skalierung bei Hover ändern */
+
+}
+.downl:hover span {
+  opacity: 0; /* Text ausblenden bei Hover */
+  transition: 0.5s linear;
+
+}
+.downl:active {
+  transform: scale(0.7); /* Skalierungseffekt bei Klick */
+}
+
+/*Impressum*/
+/* CSS für das Impressum */
+
+#impressum {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+}
+
+#contback {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #b49d42;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+address {
+  font-size: 1.2em;
+  color: #333;
+}
+
+footer {
+  margin-top: 30px;
+}
+
+footer h4 {
+  color: #b49d42;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+/* Kontaktinformationen */
+address p {
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Kontaktinformationen Links */
+address p a {
+  color: #b49d42;
+  text-decoration: none;
+}
+
+/* Kontaktinformationen Links bei Hover */
+address p a:hover {
+  text-decoration: underline;
+}
+
+/* Google Maps */
+iframe {
+  border: 2px solid #b49d42;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+  #contback {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  address {
+    font-size: 1em;
+  }
+
+  footer h4 {
+    font-size: 1.5em;
+  }
+
+  iframe {
+    margin-top: 20px;
+  }
+}

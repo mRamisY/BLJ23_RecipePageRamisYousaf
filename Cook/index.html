@@ -19,78 +19,117 @@
 </head>
 
 <body id="main">
-    <nav class="navbar">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <a href="index.html">
             <div class="logo">
                 <img src="cooker_logo.png" alt="coooker Logo">
             </div>
         </a>
+        <div class="ml-auto">
+            <button class="downl" style="border-radius: 20px" style="z-index: 1">
+                <div class="svg-wrapper-1">
+                    <div class="svg-wrapper">
+                        <img src="down3w.svg" class="custom-icon" alt="Download">
+                    </div>
+                </div>
+                <span>Print</span>
+            </button>
+            <a href="impressum.html" class="impressum-link">Impressum</a>
+        </div>
         <div class="animation"></div>
     </nav>
-<div class="container mt-5" id="block">
-    <div class="row">
-        <div class="col-md-6 order-md-1 order-2">
-            <h2 class="section-title">Ingredients</h2>
 
-            <!-- Main Dough Ingredients -->
-            <h3 class="sub-title">Main Dough</h3>
-            <ul class="list-group ingredient-list">
-                <li class="list-group-item d-flex align-items-center">
-                    <input type="checkbox" onclick="toggleIngredient(this)" class="form-check-input">
-                    <div class="toggle-box"></div>
-                    <span class="ingredient-text">250 g <strong>Flour, e.g., braided bread flour</strong></span>
-                </li>
-                <li class="list-group-item d-flex align-items-center">
-                    <input type="checkbox" onclick="toggleIngredient(this)" class="form-check-input">
-                    <div class="toggle-box"></div>
-                    <span class="ingredient-text">½ - ¾ Tsp <strong>Salt</strong></span>
-                </li>
-                <li class="list-group-item d-flex align-items-center">
-                    <input type="checkbox" onclick="toggleIngredient(this)" class="form-check-input">
-                    <div class="toggle-box"></div>
-                    <span class="ingredient-text">1 Tsp <strong>Sugar</strong></span>
-                </li>
-                <li class="list-group-item d-flex align-items-center">
-                    <input type="checkbox" onclick="toggleIngredient(this)" class="form-check-input">
-                    <div class="toggle-box"></div>
-                    <span class="ingredient-text">38 g <strong>Butter, softened</strong></span>
-                </li>
-                <li class="list-group-item d-flex align-items-center">
-                    <input type="checkbox" onclick="toggleIngredient(this)" class="form-check-input">
-                    <div class="toggle-box"></div>
-                    <span class="ingredient-text">10.5 g <strong>Yeast, crumbled</strong>, melted & cooled 5
-                        minutes</span>
-                </li>
-                <li class="list-group-item d-flex align-items-center">
-                    <input type="checkbox" onclick="toggleIngredient(this)" class="form-check-input">
-                    <div class="toggle-box"></div>
-                    <span class="ingredient-text">1.5 dl <strong>Milk, lukewarm</strong></span>
-                </li>
-            </ul>
+    <div class="container mt-5" id="block">
+        <div class="row">
+            <div class="col-md-6 order-md-1 order-2">
+                <h2 class="section-title">Ingredients</h2>
 
-            <!-- Decoration Ingredients -->
-            <h3 class="sub-title">Decoration</h3>
-            <ul class="list-group ingredient-list">
-                <li class="list-group-item d-flex align-items-center">
-                    <input type="checkbox" onclick="toggleIngredient(this)" class="form-check-input">
-                    <div class="toggle-box"></div>
-                    <span class="ingredient-text">½ <strong>Hazelnuts, walnuts, sultanas, pearl sugar, Beaten egg, for brushing</strong></span>
-                </li>
-            </ul>
+                <!-- Main Dough Ingredients -->
+                <h3 class="sub-title">Main Dough</h3>
+                <ul class="list-group ingredient-list">
+                    <li class="list-group-item d-flex align-items-center">
+                        <input type="checkbox" onclick="toggleIngredient(this)" class="form-check-input">
+                        <div class="toggle-box"></div>
+                        <span class="ingredient-text">250 g <strong>Flour, e.g., braided bread flour</strong></span>
+                    </li>
+                    <li class="list-group-item d-flex align-items-center">
+                        <input type="checkbox" onclick="toggleIngredient(this)" class="form-check-input">
+                        <div class="toggle-box"></div>
+                        <span class="ingredient-text">½ - ¾ Tsp <strong>Salt</strong></span>
+                    </li>
+                    <li class="list-group-item d-flex align-items-center">
+                        <input type="checkbox" onclick="toggleIngredient(this)" class="form-check-input">
+                        <div class="toggle-box"></div>
+                        <span class="ingredient-text">1 Tsp <strong>Sugar</strong></span>
+                    </li>
+                    <li class="list-group-item d-flex align-items-center">
+                        <input type="checkbox" onclick="toggleIngredient(this)" class="form-check-input">
+                        <div class="toggle-box"></div>
+                        <span class="ingredient-text">38 g <strong>Butter, softened</strong></span>
+                    </li>
+                    <li class="list-group-item d-flex align-items-center">
+                        <input type="checkbox" onclick="toggleIngredient(this)" class="form-check-input">
+                        <div class="toggle-box"></div>
+                        <span class="ingredient-text">10.5 g <strong>Yeast, crumbled</strong></span>
+                    </li>
+                    <li class="list-group-item d-flex align-items-center">
+                        <input type="checkbox" onclick="toggleIngredient(this)" class="form-check-input">
+                        <div class="toggle-box"></div>
+                        <span class="ingredient-text">1.5 dl <strong>Milk, lukewarm</strong></span>
+                    </li>
+                </ul>
+
+                <!-- Decoration Ingredients -->
+                <h3 class="sub-title">Decoration</h3>
+                <ul class="list-group ingredient-list">
+                    <li class="list-group-item d-flex align-items-center">
+                        <input type="checkbox" onclick="toggleIngredient(this)" class="form-check-input">
+                        <div class="toggle-box"></div>
+                        <span class="ingredient-text">½ <strong>Hazelnuts, walnuts, sultanas, pearl sugar, Beaten egg,
+                                for brushing</strong></span>
+                    </li>
+                </ul>
+            </div>
+            <!-- Preparation Info 1 -->
+            <div class="col-md-6 order-md-2 order-1">
+                <h2 class="section-title">Preparation</h2>
+                <div class="preparation-info">
+                    <div class="preparation-box">
+                        <h3>Prepare</h3>
+                        <p class="prep-time">40min</p>
+                    </div>
+                    <div class="preparation-box">
+                        <h3>Cook / Bake</h3>
+                        <p class="prep-time">25min</p>
+                    </div>
+                    <div class="preparation-box">
+                        <h3>Let rise</h3>
+                        <p class="prep-time">1h</p>
+                    </div>
+                    <div class="preparation-box">
+                        <h3>On the table in</h3>
+                        <p class="prep-time">2h 5min</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-
     <script src="little.js"></script>
 
-3    <div class="container mt-5">
+    <div class="container mt-5">
         <div class="row">
+
             <!-- Instruction 1 -->
             <div class="col-lg-3">
                 <div class="instruction">
+                    <h3>Dough</h3>
                     <img src="best-chocolate-chip-cookies.jpg" alt="in1">
                     <div class="in-text">
-                        <p>Whisk the flour, baking soda, cornstarch, and salt together in a large bowl. Set aside.</p>
+                        <p>Mix flour, salt, and sugar, forming a well. Place butter in the well. Dissolve yeast in milk
+                            and pour it into the well.
+                            Knead into a smooth dough. Allow it to rise at room temperature, covered, until doubled in
+                            size. Do not knead the dough
+                            further.</p>
                     </div>
                 </div>
             </div>
@@ -98,13 +137,14 @@
             <!-- Instruction 2 -->
             <div class="col-lg-3">
                 <div class="instruction">
+                    <h3>Decorating the Grittibänz</h3>
                     <img src="best-chocolate-chip-cookies.jpg" alt="in2">
                     <div class="in-text">
-                        <p>In a medium bowl, whisk the melted butter, brown sugar, and granulated sugar together until no brown
-                            sugar lumps remain. Whisk in the egg and egg yolk. Finally, whisk in the vanilla extract. The mixture
-                            will be thin. Pour into dry ingredients and mix together with a large spoon or rubber spatula. The
-                            dough will be very soft, thick, and appear greasy. Fold in the chocolate chips. The chocolate chips
-                            may not stick to the dough because of the melted butter, but do your best to combine them.</p>
+                        <p>Set aside a small amount of dough for decoration. Divide the remaining dough into 6 parts
+                            (adjust based on your desired
+                            quantity). Roll each piece into an oval shape, approximately 12 cm in length (the length of
+                            a baked Grittibänz).
+                        </p>
                     </div>
                 </div>
             </div>
@@ -112,10 +152,12 @@
             <!-- Instruction 3 -->
             <div class="col-lg-3">
                 <div class="instruction">
+                    <h3>Cutting</h3>
                     <img src="best-chocolate-chip-cookies.jpg" alt="in3">
                     <div class="in-text">
-                        <p>Cover the dough tightly and chill in the refrigerator for at least 2–3 hours or up to 3 days. I highly
-                            recommend chilling the cookie dough overnight for less spreading.</p>
+                        <p>On both sides, use a dough scraper to cut out a triangle for arms and legs. Make additional
+                            cuts in the dough for arms
+                            and legs.</p>
                     </div>
                 </div>
             </div>
@@ -123,64 +165,41 @@
             <!-- Instruction 4 -->
             <div class="col-lg-3">
                 <div class="instruction">
+                    <h3>Decorations</h3>
                     <img src="best-chocolate-chip-cookies.jpg" alt="in4">
                     <div class="in-text">
-                        <p>Take the dough out of the refrigerator and allow it to slightly soften at room temperature for 10
-                            minutes.</p>
+                        <p>Press raisins, nuts, etc., deeply into the dough. Use the reserved dough to create
+                            decorations such as scarves, hats,
+                            belts, etc. Attach decorations with a little water. For hair, use scissors to cut spikes
+                            into the head.</p>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="row">
+            
             <!-- Instruction 5 -->
             <div class="col-lg-3">
                 <div class="instruction">
+                    <h3>Baking</h3>
                     <img src="best-chocolate-chip-cookies.jpg" alt="in5">
                     <div class="in-text">
-                        <p>Preheat oven to 325°F (163°C). Line large baking sheets with parchment paper or silicone baking mats.
-                            Set aside.</p>
+                        <p>Preheat the oven to 180°C (convection) or 200°C (top/bottom heat). Place the Grittibänze on a
+                            prepared baking sheet,
+                            brush with beaten egg, and bake in the lower half of the preheated oven for approximately 20
+                            minutes. To check for
+                            doneness, tap the underside of the Grittibänze – they are ready when it sounds hollow.</p>
                     </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="instruction">
+                    <h3>Video - How do I shape a Grittibänz?</h3>
+                    <video width="100%" height="auto" controls>
+                        <source src="griddy.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
             </div>
 
-            <!-- Instruction 6 -->
-            <div class="col-lg-3">
-                <div class="instruction">
-                    <img src="best-chocolate-chip-cookies.jpg" alt="in6">
-                    <div class="in-text">
-                        <p>Using a cookie scoop or Tablespoon measuring spoon, measure 3 scant Tablespoons (about 2 ounces, or
-                            60g) of dough for XL cookies or 2 heaping Tablespoons (about 1.75 ounces, or 50g) of dough for
-                            medium/large cookies. Roll into a ball, making sure the shape is taller rather than wide—almost
-                            like a cylinder. This helps the cookies bake up thicker. Repeat with remaining dough. Place 8–9
-                            balls of dough onto each cookie sheet.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Instruction 7 -->
-            <div class="col-lg-3">
-                <div class="instruction">
-                    <img src="best-chocolate-chip-cookies.jpg" alt="in7">
-                    <div class="in-text">
-                        <p>Bake the cookies for 12–13 minutes or until the edges are very lightly browned. (XL cookies can
-                            take closer to 14 minutes.) The centers will look very soft, but the cookies will continue to set
-                            as they cool. Cool on the baking sheet for 10 minutes. Meanwhile, press a few extra chocolate chips
-                            into the tops of the warm cookies. This is optional and only for looks. After 10 minutes of cooling
-                            on the baking sheets, transfer cookies to a wire rack to cool completely.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Instruction 8 -->
-            <div class="col-lg-3">
-                <div class="instruction">
-                    <img src="best-chocolate-chip-cookies.jpg" alt="in8">
-                    <div class="in-text">
-                        <p>Cookies stay fresh covered at room temperature for up to 1 week.</p>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </body>
