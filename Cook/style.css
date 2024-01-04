@@ -36,9 +36,9 @@ nav {
 /* Animationscode */
 
 .animation {
-  width: 35px;
-  height: 35px;
-  background: url("cookie_35-removebg-preview.png") no-repeat;
+  width: 50px;
+  height:50px;
+  background: url("Grittibaenz_klein-removebg-preview.png") no-repeat;
   background-size: cover;
   animation: rotate 20s linear infinite;
   position: absolute;
@@ -137,7 +137,7 @@ p {
   margin-bottom: 1.9%;
   background-color: rgb(108, 84, 53);
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   height: auto;
 }

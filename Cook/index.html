@@ -22,7 +22,7 @@
     <nav class="navbar">
         <a href="index.html">
             <div class="logo">
-                <img src="cooker_logo.png" alt="CODM Logo">
+                <img src="cooker_logo.png" alt="coooker Logo">
             </div>
         </a>
         <div class="animation"></div>
@@ -94,17 +94,7 @@
     </div>
     <script src="little.js"></script>
 
-    <div class="container mt-5" id="block">
-        <div class="row">
-            <div class="col-md-6 order-md-1 order-2">
-                <ul class="list-group ingredient-list">
-                    <!-- Ingredients List -->
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div class="container mt-5">
+3    <div class="container mt-5">
         <div class="row">
             <!-- Instruction 1 -->
             <div class="col-lg-3">
@@ -204,24 +194,6 @@
             </div>
         </div>
     </div>
-    <script>
-        function toggleStep(stepNumber) {
-            // Hide all steps
-            for (let i = 1; i <= 8; i++) {
-                const step = document.getElementById('step' + i);
-                if (step) {
-                    step.style.display = 'none';
-                }
-            }
-
-            // Show the selected step
-            const selectedStep = document.getElementById('step' + stepNumber);
-            if (selectedStep) {
-                selectedStep.style.display = 'block';
-            }
-        }
-    </script>
-
 </body>
 
 </html>
