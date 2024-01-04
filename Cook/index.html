@@ -19,26 +19,22 @@
 </head>
 
 <body id="main">
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar">
         <a href="index.html">
             <div class="logo">
                 <img src="cooker_logo.png" alt="coooker Logo">
             </div>
         </a>
-        <div class="ml-auto">
-            <button class="downl" style="border-radius: 20px" style="z-index: 1">
-                <div class="svg-wrapper-1">
-                    <div class="svg-wrapper">
-                        <img src="down3w.svg" class="custom-icon" alt="Download">
-                    </div>
+        <button class="downl" style="border-radius: 20px" style="z-index: 1">
+            <div class="svg-wrapper-1">
+                <div class="svg-wrapper">
+                    <img src="down3w.svg" class="custom-icon" alt="Download">
                 </div>
-                <span>Print</span>
-            </button>
-            <a href="impressum.html" class="impressum-link">Impressum</a>
-        </div>
+            </div>
+            <span>Print</span>
+        </button>
         <div class="animation"></div>
     </nav>
-
     <div class="container mt-5" id="block">
         <div class="row">
             <div class="col-md-6 order-md-1 order-2">
@@ -121,7 +117,7 @@
 
             <!-- Instruction 1 -->
             <div class="col-lg-3">
-                <div class="instruction">
+                <div class="instruction" id="instruction1">
                     <h3>Dough</h3>
                     <img src="best-chocolate-chip-cookies.jpg" alt="in1">
                     <div class="in-text">
@@ -131,12 +127,15 @@
                             size. Do not knead the dough
                             further.</p>
                     </div>
+                    <div class="checkbox-wrapper-25">
+                        <input type="checkbox" id="completionCheckbox1" onchange="toggleDim('completionCheckbox1')">
+                    </div>
                 </div>
             </div>
 
             <!-- Instruction 2 -->
             <div class="col-lg-3">
-                <div class="instruction">
+                <div class="instruction" id="instruction2">
                     <h3>Decorating the Grittibänz</h3>
                     <img src="best-chocolate-chip-cookies.jpg" alt="in2">
                     <div class="in-text">
@@ -146,12 +145,15 @@
                             a baked Grittibänz).
                         </p>
                     </div>
+                    <div class="checkbox-wrapper-25">
+                        <input type="checkbox" id="completionCheckbox2" onchange="toggleDim('completionCheckbox2')">
+                    </div>
                 </div>
             </div>
 
             <!-- Instruction 3 -->
             <div class="col-lg-3">
-                <div class="instruction">
+                <div class="instruction" id="instruction3">
                     <h3>Cutting</h3>
                     <img src="best-chocolate-chip-cookies.jpg" alt="in3">
                     <div class="in-text">
@@ -159,12 +161,15 @@
                             cuts in the dough for arms
                             and legs.</p>
                     </div>
+                    <div class="checkbox-wrapper-25">
+                        <input type="checkbox" id="completionCheckbox3" onchange="toggleDim('completionCheckbox3')">
+                    </div>
                 </div>
             </div>
 
             <!-- Instruction 4 -->
             <div class="col-lg-3">
-                <div class="instruction">
+                <div class="instruction " id="instruction4">
                     <h3>Decorations</h3>
                     <img src="best-chocolate-chip-cookies.jpg" alt="in4">
                     <div class="in-text">
@@ -173,12 +178,15 @@
                             belts, etc. Attach decorations with a little water. For hair, use scissors to cut spikes
                             into the head.</p>
                     </div>
+                    <div class="checkbox-wrapper-25">
+                        <input type="checkbox" id="completionCheckbox4" onchange="toggleDim('completionCheckbox4')">
+                    </div>
                 </div>
             </div>
-            
+
             <!-- Instruction 5 -->
             <div class="col-lg-3">
-                <div class="instruction">
+                <div class="instruction" id="instruction5">
                     <h3>Baking</h3>
                     <img src="best-chocolate-chip-cookies.jpg" alt="in5">
                     <div class="in-text">
@@ -188,8 +196,13 @@
                             minutes. To check for
                             doneness, tap the underside of the Grittibänze – they are ready when it sounds hollow.</p>
                     </div>
+                    <div class="checkbox-wrapper-25">
+                        <input type="checkbox" id="completionCheckbox5" onchange="toggleDim('completionCheckbox5')">
+                    </div>
                 </div>
             </div>
+
+
             <div class="col-lg-3">
                 <div class="instruction">
                     <h3>Video - How do I shape a Grittibänz?</h3>
